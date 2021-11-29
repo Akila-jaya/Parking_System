@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="VehicleTable" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.VehicleTableFormController">
+   <children>
+      <TableView fx:id="VehicleTbl" layoutX="14.0" layoutY="84.0" prefHeight="308.0" prefWidth="572.0">
+        <columns>
+          <TableColumn fx:id="colVehicle" prefWidth="110.33331298828125" text="Vehicle Number" />
+          <TableColumn fx:id="colVehicleType" prefWidth="106.33331298828125" text="Vehicle Type" />
+            <TableColumn fx:id="colMaximumWeight" prefWidth="128.3333740234375" text="Maximum Weight" />
+            <TableColumn fx:id="colNumberOfPassenger" prefWidth="132.66668701171875" text="Number Of Passenger" />
+            <TableColumn fx:id="colDelete" prefWidth="90.33331298828125" text="Delete" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="26.0" layoutY="24.0" onAction="#BackOnAction" prefHeight="33.0" prefWidth="104.0" style="-fx-background-color: #bdc3c7;" text="Back" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

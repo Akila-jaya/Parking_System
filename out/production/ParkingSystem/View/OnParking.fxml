@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="OnParkingAnchor" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OnParkingFormController">
+   <children>
+      <ComboBox fx:id="OnParkingCombo" layoutX="25.0" layoutY="62.0" prefWidth="150.0" />
+      <JFXButton layoutX="212.0" layoutY="62.0" onAction="#AddVehicleOnAction" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #bdc3c7;" text="Add Vehicle">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="339.0" layoutY="62.0" onAction="#AddDriveronAction" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #bdc3c7;" text="Add Driver">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></JFXButton>
+      <TableView fx:id="Onparking" layoutX="2.0" layoutY="165.0" prefHeight="236.0" prefWidth="596.0">
+        <columns>
+          <TableColumn fx:id="vehicleNumber" prefWidth="125.66665649414062" text="Vehicle Number" />
+          <TableColumn fx:id="vehicleType" prefWidth="165.33331298828125" text="Vehicle Type" />
+            <TableColumn fx:id="driverName" prefWidth="142.66668701171875" text="Driver Name" />
+            <TableColumn fx:id="leftTime" prefWidth="161.0" text="Parked  Time" />
+        </columns>
+      </TableView>
+      <JFXTextArea layoutX="2.0" prefHeight="35.0" prefWidth="596.0" style="-fx-background-color: #bdc3c7;" text="On Parking" />
+      <JFXButton layoutX="457.0" layoutY="104.0" onAction="#TableOnAction" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: #bdc3c7;" text="Tables">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="464.0" layoutY="62.0" onAction="#BackOnAction" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #bdc3c7;" text="Log Out">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

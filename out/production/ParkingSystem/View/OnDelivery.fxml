@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="OnDeliveryAnchor" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OnDeliveryFormcontroller">
+   <children>
+      <TableView fx:id="OnDeliveryTable" layoutX="13.0" layoutY="63.0" prefHeight="323.0" prefWidth="575.0">
+        <columns>
+          <TableColumn fx:id="ColVehicleNumber" prefWidth="133.66665649414062" text="Vehicle Number" />
+          <TableColumn fx:id="ColVehicleType" prefWidth="113.33334350585938" text="Vehicle Type" />
+            <TableColumn fx:id="DName" prefWidth="141.66668701171875" text="Driver Name" />
+            <TableColumn fx:id="lefttime" prefWidth="185.33331298828125" text="Left Time" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="492.0" layoutY="20.0" onAction="#BackOnAction" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #bdc3c7;" text="Back">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>
